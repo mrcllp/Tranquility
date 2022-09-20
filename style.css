@@ -38,7 +38,7 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   flex: 1;
 }
 
@@ -116,14 +116,50 @@ video {
   z-index: -10;
 }
 
-header {
-  margin: 10px;
-}
-
 .main-text h1 {
   text-align: center;
-  font-size: 5rem; 
+  font-size: 5rem;
   letter-spacing: 0.2rem;
   color: white;
   font-family: "Dancing Script", sans-serif;
+}
+
+.hide {
+  border: none;
+  display: block;
+  text-transform: uppercase;
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Dancing Script";
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.hide:hover {
+  color: black;
+  background-color: white;
+}
+
+.show {
+  display: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Dancing Script";
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.show:hover {
+  color: black;
+  background-color: white;
 }

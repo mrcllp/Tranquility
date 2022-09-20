@@ -1,8 +1,13 @@
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
 const replay = document.querySelector(".replay");
+const contain = document.querySelector(".player-container");
 const outline = document.querySelector(".moving-outline circle");
 const video = document.querySelector(".vid-container video");
+const hide = document.querySelector(".hide");
+const soundCont = document.querySelector(".sound-picker");
+const timeCont = document.querySelector(".time-select");
+const show = document.querySelector(".show");
 //Sounds
 const sounds = document.querySelectorAll(".sound-picker button");
 //Time Display
@@ -18,6 +23,21 @@ timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
   fakeDuration % 60
 )}`;
 
+hide.addEventListener("click", () => {
+  contain.style.display = "none";
+  soundCont.style.display = "none";
+  timeCont.style.display = "none";
+  hide.style.display = "none";
+  show.style.display = "block";
+});
+show.addEventListener("click", () => {
+  contain.style.display = "flex";
+  soundCont.style.display = "flex";
+  timeCont.style.display = "flex";
+  hide.style.display = "block";
+  show.style.display = "none";
+});
+
 sounds.forEach((sound) => {
   sound.addEventListener("click", function () {
     song.src = this.getAttribute("data-sound");
@@ -28,7 +48,6 @@ sounds.forEach((sound) => {
 
 play.addEventListener("click", function () {
   checkPlaying(song);
-
 });
 
 timeSelect.forEach((option) => {
