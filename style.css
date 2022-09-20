@@ -127,12 +127,12 @@ video {
 .hide {
   border: none;
   display: block;
-  text-transform: uppercase;
+
   background-color: transparent;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   font-family: "Dancing Script";
   padding: 10px 25px;
@@ -147,12 +147,11 @@ video {
 .show {
   display: none;
   border: none;
-  text-transform: uppercase;
   background-color: transparent;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   font-family: "Dancing Script";
   padding: 10px 25px;
